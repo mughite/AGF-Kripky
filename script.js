@@ -37,8 +37,8 @@ const graph = (datos) => {
     .call(d3.axisBottom(x));
 
     let y = d3.scaleLinear()
-                .domain([0, d3.max(datos, (d)=>{return d.value})])
-                .range([height, 0])
+                .domain([93, d3.max(datos, (d)=>{return d.value})])
+                .range([height,0])
     g.append("g")
       .call(d3.axisLeft(y))
 
@@ -51,6 +51,7 @@ const graph = (datos) => {
         .x(function(d) { return x(d.date) })
         .y(function(d) { return y(d.value) })
         )
+    g.attr("transform", "translate(100,0)")
 }
 
 
