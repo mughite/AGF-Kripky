@@ -37,7 +37,7 @@ const graph = (datos) => {
     .call(d3.axisBottom(x));
 
     let y = d3.scaleLinear()
-                .domain([93, d3.max(datos, (d)=>{return d.value})])
+                .domain([d3.min(datos, (d)=>{return d.value}) - 10000, d3.max(datos, (d)=>{return d.value}) + 10000])
                 .range([height,0])
     g.append("g")
       .call(d3.axisLeft(y))
@@ -57,6 +57,11 @@ const graph = (datos) => {
 
 d3.csv("data1.csv", interpreter).then((datos) => {
   graph(datos)
+  let pos = Object.keys(datos).length - 2
+  console.log(pos)
+  let amount = datos[pos]
+  d3.selectAll(".amount")
+    .text("$"+ Math.round(amount.value))
 // datos.forEach((d)=>console.log(d))  
 }).catch((err) => {
     console.log(err)
