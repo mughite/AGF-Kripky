@@ -18,10 +18,10 @@ const margin = {
 }
 
 const svgframe = d3.selectAll(".graph")
-            .append("svg")
-            .attr("class", 'rent')
-            .attr("width", size.width)
-            .attr("height", size.height)
+                    .append("svg")
+                    .attr("class", 'rent')
+                    .attr("width", size.width)
+                    .attr("height", size.height)
 
 const graph = (datos) => {
     // const labels = datos.value
@@ -57,7 +57,7 @@ const graph = (datos) => {
 
 d3.csv("data1.csv", interpreter).then((datos) => {
   graph(datos)
-datos.forEach((d)=>console.log(d))  
+// datos.forEach((d)=>console.log(d))  
 }).catch((err) => {
     console.log(err)
 })
