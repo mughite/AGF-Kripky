@@ -11,6 +11,28 @@ table{
 
 .container {
     margin-left: 100px;
+    margin-right: 100px;
+}
+
+.title{
+    text-align: center;
+}
+
+.fund{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 400px;
+    justify-items: center;
+}
+
+.button{
+    width: 100px;
 }
 
 
