@@ -1,4 +1,17 @@
+th{
+    width: 150px;
+    height: 20px;
+    font-size: 0.5cm;
+    text-align: center;
+}
+
+table{
+    margin-left:100px;
+}
+
 .container {
     margin-left: 100px;
 }
+
+
 
