@@ -5,6 +5,13 @@ th{
     text-align: center;
 }
 
+html{
+    background-color:#fafafa
+}
+
+img{
+    border-radius: 5%;
+}
 table{
     margin-left:100px;
 }
@@ -12,6 +19,7 @@ table{
 .container {
     margin-left: 100px;
     margin-right: 100px;
+   
 }
 
 .title{
@@ -22,6 +30,7 @@ table{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    padding-bottom: 50px;
 }
 .card{
     display: grid;
@@ -29,6 +38,12 @@ table{
     width: 300px;
     height: 400px;
     justify-items: center;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.quest{
+    padding-top: 40px;
 }
 
 .button{
@@ -39,4 +54,36 @@ table{
     font-size: 2cm;
 }
 
+.graph{
+    margin-top: 20px
+}
 
+.form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin:auto;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    justify-items: center;
+    border-radius: 5%;
+
+}
+
+.head-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.bdimp{
+    margin-top: 60px;
+    width:200px;
+    height:50px;
+}
+
+.bdlabel{
+    padding-left: 35px;
+    font-size: 1cm;
+}
