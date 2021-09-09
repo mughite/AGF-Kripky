@@ -2,3 +2,4 @@
 *.csv
 *.ipynb
 *.xlsx
+!data1.csv
