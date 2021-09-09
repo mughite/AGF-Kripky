@@ -28,7 +28,7 @@ table{
 
 .fund{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding-bottom: 50px;
 }
@@ -40,11 +40,9 @@ table{
     justify-items: center;
     border-radius: 5%;
     background-color: white;
+    margin-bottom: 15px;
 }
 
-.quest{
-    padding-top: 40px;
-}
 
 .button{
     width: 100px;
@@ -78,17 +76,41 @@ table{
 }
 
 .bdimp{
-    margin-top: 60px;
     width:200px;
     height:50px;
 }
 
 .bdlabel{
-    padding-left: 35px;
     font-size: 1cm;
+    text-align: center;
+}
+
+.bdilabel{
+    font-size: 0.5cm;
+    margin-top: -20px;
 }
 
 .buttons{
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.form-login{
+    margin-top: 50px;
+    width: 400px;
+    margin-bottom: 25px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.form-client{
+    margin-top: 50px;
+    width: 400px;
+    margin-bottom: 25px;
+    margin:auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5%;
 }
