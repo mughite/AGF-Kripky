@@ -55,7 +55,7 @@ const graph = (datos) => {
 }
 
 
-d3.csv("data1.csv", interpreter).then((datos) => {
+d3.csv("../data/data1.csv", interpreter).then((datos) => {
   graph(datos)
 }).catch((err) => {
     console.log(err)
