@@ -83,11 +83,31 @@ table{
 }
 
 .bdlabel{
-    padding-left: 35px;
     font-size: 1cm;
+    text-align: center;
 }
 
 .buttons{
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.form-login{
+    margin-top: 50px;
+    width: 400px;
+    margin-bottom: 25px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.form-client{
+    margin-top: 50px;
+    width: 400px;
+    margin-bottom: 25px;
+    margin:auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5%;
 }
