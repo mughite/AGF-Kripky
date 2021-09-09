@@ -87,3 +87,8 @@ table{
     padding-left: 35px;
     font-size: 1cm;
 }
+
+.buttons{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
